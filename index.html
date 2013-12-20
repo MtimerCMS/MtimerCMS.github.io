@@ -9,7 +9,7 @@
   <meta name="author" content="Mtimer">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="Welcome to Mtimer CMS Official Blog! Why? We can render inline math like : Good Stuff. One line code To generate standalone blocks of math, add &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,7 +29,36 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
   
 
 </head>
@@ -56,22 +85,49 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/blog">Blog</a></li>
+  <li><a href="https://github.com/">Projects</a></li>
 </ul>
 
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div class="page-content">
+<article role="article">
+  
+  <h2>Welcome to Mtimer CMS Official Blog!</h2>
+
+<h3>Why?</h3>
+
+<p>We can render inline math like : <code>Good Stuff</code>.</p>
+
+<h3>One line code</h3>
+
+<p>To generate standalone blocks of math, add double dollar symbols on new lines before and after the markup.</p>
+
+<pre><code>Let's begin.
+</code></pre>
+
+<p>Welcome.</p>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
   
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  
 </div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -88,10 +144,12 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
   Copyright &copy; 2013 - Mtimer -
+  <span class="credit">Designed by <a href="http://stchangg.com">@stchangg</a></span> -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
