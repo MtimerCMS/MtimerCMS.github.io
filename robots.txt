@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://MtimerCMS.github.io/sitemap.xml 
